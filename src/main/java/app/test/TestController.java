@@ -1,6 +1,5 @@
-package controllers;
+package app.test;
 
-import services.TestService;
 import util.JsonUtil;
 
 import static spark.Spark.*;
@@ -17,7 +16,7 @@ public final class TestController {
     private TestController(){
         service = new TestService();
 
-        get("/test/createMock", (req, res) -> service.createMock(), JsonUtil.json());
+        get("/app/createMock", (req, res) -> service.createMock(), JsonUtil.json());
     }
 
     public static TestController initialize(){

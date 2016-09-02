@@ -1,6 +1,4 @@
-package services;
-
-import models.TestModel;
+package app.test;
 
 /**
  * Created by Fernando on 24/08/2016.
